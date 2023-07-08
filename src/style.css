@@ -1,0 +1,145 @@
+:root {
+  --default-color: black;
+  --sunny-color: #ffff8a;
+  --night-color: #e5e5e5;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  caret-color: transparent;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "DM Serif Display", serif;
+}
+
+/* Container styles */
+.container {
+  height: 90%;
+  width: 50%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Location search styles */
+#location-search {
+  flex: 8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: var(--default-color);
+  margin-top: 1em;
+}
+
+#search-input {
+  width: 300px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-right: none;
+  box-shadow: none;
+  caret-color: auto;
+  border-radius: 4px 0 0 4px;
+}
+
+/* Location title styles */
+#location-title {
+  flex: 1;
+}
+
+/* Weather description styles */
+#weather-description {
+  flex: 1;
+  font-size: 25px;
+}
+
+/* Search button styles */
+input[type="search"] {
+  border-right: none;
+}
+
+input[type="search"]:focus {
+  outline: none;
+}
+
+#search-button {
+  padding-top: 3px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  border-left: none;
+  height: 23px;
+  border-radius: 0 4px 4px 0;
+  background-color: white;
+}
+
+#search-button:hover {
+  color: blue;
+}
+
+/* Location weather info styles */
+#location-weather-info {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+  font-size: 75px;
+  gap: 10px;
+}
+
+#city-name {
+  font-size: 75px;
+}
+
+#weather-icon {
+  padding-top: 15px;
+}
+
+/* Current temperature styles */
+#current-temperature {
+  font-size: 75px;
+}
+
+/* Temperature measurement styles */
+#temperature-measurement {
+  font-size: 25px;
+  font-weight: bolder;
+  gap: 4px;
+  padding-top: 22px;
+  display: none;
+  cursor: pointer;
+}
+
+#fahrenheit-symbol {
+  opacity: 1;
+}
+
+#celsius-symbol {
+  opacity: 0.6;
+}
+
+/* Location weather additional info styles */
+#location-weather-additional-info {
+  flex: 1;
+  font-size: 20px;
+  padding-top: 21px;
+}
+
+/* Material symbols outlined styles */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="location-title">
+      <div id="city-name">Enter a City!</div>
+    </div>
+    <div id="weather-description"></div>
+    <div id="location-weather-info">
+      <i id="weather-icon"></i>
+      <div id="current-temperature"></div>
+      <div id="temperature-measurement">
+        <div id="fahrenheit-symbol">&deg;F</div>
+        <div id="celsius-symbol">&deg;C</div>
+      </div>
+      <div id="location-weather-additional-info">
+        <div id="feels-like"></div>
+        <div id="humidity"></div>
+        <div id="wind-speed"></div>
+      </div>
+    </div>
+    <div id="location-search">
+      <input type="search" id="search-input" placeholder="Enter a City" />
+      <span class="material-symbols-outlined" id="search-button"> search </span>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
